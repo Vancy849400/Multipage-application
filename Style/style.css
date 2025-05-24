@@ -1,0 +1,153 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8ffff;
+}
+
+.container {
+  padding: 0 50px;
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #555; /* Darken the color */
+  font-weight: bold; /* Make the links bold */
+  transition: color 0.3s ease; /* Add a smooth transition for hover effect */
+}
+
+.navbar li a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Home Styles */
+.home {
+  width: 100%;
+  height: 400px;
+}
+
+.home-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Text Styles */
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+h1 span {
+  font-weight: 500;
+  color: #007bff;
+}
+
+.text-black {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffffff;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.footer-text {
+  padding: 10px 0 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text h2 {
+  font-size: 2.5em;
+  font-weight: 350;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-top: 80px; /* Add some space below the fixed navbar */
+  padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    margin-top: 10px;
+  }
+
+  .home-text {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .text-black {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .footer-text h2 {
+    font-size: 1.8em;
+  }
+}
